@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="animate-fade-in">
           {/* Profile Image */}
-          <div className="mb-8 flex justify-center">
+          <div className="mb-4 flex justify-center">
             <div className="relative flex items-center justify-center">
               <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-electric-blue/30 shadow-[0_0_40px_rgba(0,212,255,0.3)] animate-glow flex items-center justify-center">
                 <img 
