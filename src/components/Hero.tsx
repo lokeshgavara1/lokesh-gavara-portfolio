@@ -27,7 +27,7 @@ const Hero = () => {
             <div className="relative flex items-center justify-center">
               <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-electric-blue/30 shadow-[0_0_40px_rgba(0,212,255,0.3)] animate-glow flex items-center justify-center">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
+                  src="https://i.postimg.cc/zDbKDKYN/naaphoto.png" 
                   alt="Lokesh Gavara"
                   className="w-full h-full object-cover object-center"
                 />
