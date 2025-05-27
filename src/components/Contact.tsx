@@ -5,6 +5,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { sendEmail, EmailData } from '@/services/emailService';
+import { Loader2 } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,15 +14,38 @@ const Contact = () => {
     email: '',
     message: ''
   });
+  const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon!",
-    });
-    setFormData({ name: '', email: '', message: '' });
+    setIsLoading(true);
+
+    try {
+      const emailData: EmailData = {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      };
+
+      await sendEmail(emailData);
+      
+      toast({
+        title: "Message Sent Successfully!",
+        description: "Thank you for reaching out. I'll get back to you soon!",
+      });
+      
+      // Clear form on successful submission
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      toast({
+        title: "Failed to Send Message",
+        description: "There was an error sending your message. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const contactInfo = [
@@ -101,6 +126,7 @@ const Contact = () => {
                       onChange={(e) => setFormData({...formData, name: e.target.value})}
                       className="bg-background/50 border-gray-600 focus:border-electric-blue h-14 text-lg rounded-xl transition-all duration-300 hover:border-gray-500"
                       required
+                      disabled={isLoading}
                     />
                   </div>
                   <div>
@@ -111,6 +137,7 @@ const Contact = () => {
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
                       className="bg-background/50 border-gray-600 focus:border-electric-blue h-14 text-lg rounded-xl transition-all duration-300 hover:border-gray-500"
                       required
+                      disabled={isLoading}
                     />
                   </div>
                   <div>
@@ -120,13 +147,22 @@ const Contact = () => {
                       onChange={(e) => setFormData({...formData, message: e.target.value})}
                       className="bg-background/50 border-gray-600 focus:border-electric-blue min-h-[150px] text-lg rounded-xl transition-all duration-300 hover:border-gray-500 resize-none"
                       required
+                      disabled={isLoading}
                     />
                   </div>
                   <Button 
                     type="submit"
                     className="w-full bg-electric-blue hover:bg-electric-blue/80 text-black font-semibold py-4 rounded-xl hover-glow text-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-electric-blue/25"
+                    disabled={isLoading}
                   >
-                    Send Message
+                    {isLoading ? (
+                      <>
+                        <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                        Sending...
+                      </>
+                    ) : (
+                      'Send Message'
+                    )}
                   </Button>
                 </form>
               </CardContent>
