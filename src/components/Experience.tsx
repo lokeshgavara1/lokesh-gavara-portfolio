@@ -6,24 +6,27 @@ import { Badge } from '@/components/ui/badge';
 const Experience = () => {
   const experiences = [
     {
-      title: "AIML Intern",
-      company: "ShadowFox",
-      location: "Visakhapatnam",
-      period: "07/2024 - 08/2024",
+      title: "Python Developer Intern",
+      company: "Infosys Springboard",
+      location: "Remote",
+      period: "May 2025 – Present",
       achievements: [
-        "Led a team of engineers in development and implementation",
-        "Developed new scheduling system, reducing completion times by 10%"
+        "Gained hands-on experience in core Python concepts including data structures, OOPs, exception handling, and file operations",
+        "Learned to apply Python for automation, data handling, and basic API integration",
+        "Enhanced problem-solving and coding efficiency through assignments, coding challenges, and mentorship sessions"
       ],
       color: "electric-blue"
     },
     {
-      title: "Python Intern",
-      company: "InternPe",
-      location: "Visakhapatnam", 
-      period: "06/2024 - 07/2024",
+      title: "Artificial Intelligence and Machine Learning Intern",
+      company: "Infosys Springboard",
+      location: "Remote", 
+      period: "June 2025 – Present",
       achievements: [
-        "Created Python scripts for data analysis and web functionality using Pandas and Flask",
-        "Designed optimized data pipeline improving efficiency by 20%"
+        "Gained hands-on experience in data preprocessing, model building, training, and evaluation",
+        "Designed and optimized machine learning models for classification, prediction, and clustering using Python, TensorFlow, Scikit-learn",
+        "Gained exposure to neural networks and deep learning fundamentals",
+        "Collaborated on project-based tasks, enhancing problem-solving, critical thinking, and analytical skills"
       ],
       color: "neon-green"
     }
