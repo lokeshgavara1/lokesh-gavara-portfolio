@@ -50,6 +50,15 @@ const Portfolio = () => {
       accuracy: "Trend Analysis",
       color: "electric-blue",
       github: "https://github.com/lokeshgavara1/Youtube-Trend-Analyser"
+    },
+    {
+      title: "Customer Management System",
+      description: "Android application for comprehensive customer management with features for customer data handling, relationship management, and business operations optimization",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
+      tech: ["Android", "Java", "SQLite", "XML"],
+      accuracy: "Mobile App",
+      color: "neon-green",
+      github: "https://github.com/lokeshgavara1/CustomerManagementSystemProjectportfolio"
     }
   ];
 
