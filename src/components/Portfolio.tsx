@@ -12,7 +12,8 @@ const Portfolio = () => {
       image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&h=400&fit=crop",
       tech: ["TensorFlow Lite", "Android", "CNN", "Python"],
       accuracy: "90%",
-      color: "electric-blue"
+      color: "electric-blue",
+      github: "https://github.com/lokeshgavara1/Crop_Disease_Prediction"
     },
     {
       title: "OCR and Document Classifier", 
@@ -20,7 +21,35 @@ const Portfolio = () => {
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
       tech: ["Tesseract", "TensorFlow", "Python", "OCR"],
       accuracy: "92%",
-      color: "neon-green"
+      color: "neon-green",
+      github: "https://github.com/lokeshgavara1/Optical_Character_Recognition"
+    },
+    {
+      title: "BizBoost – Automated Social Media Promotion Tool",
+      description: "Full-stack web application for automating social media promotions using Node.js, Express, MongoDB, React, and JWT authentication with automated content generation and analytics dashboard",
+      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
+      tech: ["Node.js", "Express", "MongoDB", "React", "JWT"],
+      accuracy: "Full-Stack",
+      color: "electric-blue",
+      github: "https://github.com/lokeshgavara1/BizBoost-Automated-Social-Media-Promotion-Tool"
+    },
+    {
+      title: "AI News Generator",
+      description: "Comprehensive blog post creation tool using advanced AI agents powered by CrewAI & Cohere's Command R7B with user-friendly design and practical AI applications",
+      image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&h=400&fit=crop",
+      tech: ["CrewAI", "Cohere", "AI", "Blog Generation"],
+      accuracy: "AI-Powered",
+      color: "neon-green",
+      github: "https://github.com/lokeshgavara1/AI-Engineering-Projects-Hub/tree/main/ai_news_generator"
+    },
+    {
+      title: "YouTube Trend Analysis",
+      description: "YouTube Trend Analysis system implementing CrewAI and BrightData for comprehensive video trend insights and analytics",
+      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop",
+      tech: ["CrewAI", "BrightData", "Analytics", "YouTube API"],
+      accuracy: "Trend Analysis",
+      color: "electric-blue",
+      github: "https://github.com/lokeshgavara1/Youtube-Trend-Analyser"
     }
   ];
 
@@ -78,12 +107,14 @@ const Portfolio = () => {
                   <Button 
                     variant="outline" 
                     className={`border-${project.color} text-${project.color} hover:bg-${project.color} hover:text-black flex-1 py-3 text-lg font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-${project.color}/25`}
+                    onClick={() => window.open(project.github, '_blank')}
                   >
                     Live Demo
                   </Button>
                   <Button 
                     variant="outline" 
                     className="border-gray-500 text-gray-400 hover:bg-gray-500 hover:text-black flex-1 py-3 text-lg font-semibold transition-all duration-300 hover:shadow-lg"
+                    onClick={() => window.open(project.github, '_blank')}
                   >
                     GitHub
                   </Button>
