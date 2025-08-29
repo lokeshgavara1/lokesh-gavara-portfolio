@@ -73,7 +73,7 @@ const Portfolio = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-20">
           <h2 className="text-5xl md:text-6xl font-bold font-poppins mb-6">
-            My <span className="gradient-text">Portfolio</span>
+            My <span className="gradient-text">Projects</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-electric-blue to-neon-green mx-auto mb-6"></div>
           <p className="text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed">

@@ -30,10 +30,10 @@ const Header = () => {
         </div>
         
         <nav className="hidden md:flex space-x-8">
-          {['Home', 'About', 'Experience', 'Skills', 'Portfolio', 'Contact'].map((item) => (
+          {['Home', 'About', 'Experience', 'Skills', 'Projects', 'Contact'].map((item) => (
             <button
               key={item}
-              onClick={() => scrollToSection(item.toLowerCase())}
+              onClick={() => scrollToSection(item.toLowerCase() === 'projects' ? 'portfolio' : item.toLowerCase())}
               className="text-foreground hover:text-electric-blue transition-all duration-300 font-medium relative group py-2"
             >
               {item}
