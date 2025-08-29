@@ -6,22 +6,34 @@ import { Badge } from '@/components/ui/badge';
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Core Skills",
-      icon: "🎯",
-      skills: ["Python", "Machine Learning", "MySQL"],
+      title: "Languages",
+      icon: "💻",
+      skills: ["Java", "Python", "C", "SQL", "JavaScript", "HTML/CSS", "PHP"],
       color: "electric-blue"
     },
     {
-      title: "Expertise Areas", 
+      title: "Frameworks", 
       icon: "⚡",
-      skills: ["Machine Learning", "Web Development", "Android Development"],
+      skills: ["React", "Node.js", "Express.js", "Flask", "Kotlin"],
       color: "neon-green"
     },
     {
-      title: "Services Offered",
-      icon: "🎨", 
-      skills: ["UI/UX Design", "Canva Design", "Social Media Content Creation"],
+      title: "Developer Tools",
+      icon: "🛠️", 
+      skills: ["Git", "Github", "Google Cloud Platform", "Visual Studio", "Jupyter", "Eclipse", "Power BI", "Tableau"],
       color: "neon-pink"
+    },
+    {
+      title: "Libraries",
+      icon: "📚",
+      skills: ["pandas", "NumPy", "Matplotlib", "TensorFlow", "PyTorch", "Scikit-learn", "OpenCV"],
+      color: "electric-blue"
+    },
+    {
+      title: "Databases",
+      icon: "🗄️",
+      skills: ["AWS", "Firebase", "MongoDB", "MySQL", "Oracle", "Microsoft SQL Server"],
+      color: "neon-green"
     }
   ];
 
@@ -45,7 +57,7 @@ const Skills = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
           {skillCategories.map((category, index) => (
             <Card key={index} className={`glass-effect border-${category.color}/20 hover-glow animate-fade-in group hover:border-${category.color}/40 transition-all duration-500 transform hover:-translate-y-4 hover:scale-105`} style={{animationDelay: `${index * 0.2}s`}}>
               <CardContent className="p-10 text-center">
