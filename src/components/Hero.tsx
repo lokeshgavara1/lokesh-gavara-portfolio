@@ -71,6 +71,12 @@ const Hero = () => {
               variant="outline" 
               className="border-2 border-electric-blue text-electric-blue hover:bg-electric-blue hover:text-background px-10 py-4 rounded-full text-lg transition-all duration-300 shadow-lg"
               size="lg"
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/resume.pdf';
+                link.download = 'Lokesh_Gavara_Resume.pdf';
+                link.click();
+              }}
             >
               Download Resume
             </Button>
