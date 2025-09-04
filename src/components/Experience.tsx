@@ -40,21 +40,21 @@ const Experience = () => {
         <div className="absolute bottom-1/3 right-1/4 w-72 h-72 bg-electric-blue/5 rounded-full blur-3xl"></div>
       </div>
       
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold font-poppins mb-6">
-            My <span className="gradient-text">Experience</span>
+      <div className="section-container">
+        <div className="section-header">
+          <h2 className="section-title">
+            Professional <span className="gradient-text">Experience</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-electric-blue to-neon-green mx-auto mb-6"></div>
-          <p className="text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed">
+          <div className="section-divider"></div>
+          <p className="section-description">
             Professional internships and hands-on experience in AI/ML and development
           </p>
         </div>
         
-        <div className="space-y-12 max-w-5xl mx-auto">
+        <div className="space-y-10 lg:space-y-12 max-w-6xl mx-auto">
           {experiences.map((exp, index) => (
-            <Card key={index} className={`glass-effect border-${exp.color}/20 hover-glow animate-fade-in group hover:border-${exp.color}/40 transition-all duration-500 transform hover:-translate-y-3 hover:scale-105`} style={{animationDelay: `${index * 0.2}s`}}>
-              <CardContent className="p-10">
+            <Card key={index} className={`professional-card border-${exp.color}/20 hover:border-${exp.color}/40 animate-fade-in group`} style={{animationDelay: `${index * 0.2}s`}}>
+              <CardContent className="p-10 lg:p-12">
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-8">
                   <div className="flex items-start space-x-6">
                     <div className={`w-16 h-16 bg-${exp.color}/20 rounded-2xl flex items-center justify-center flex-shrink-0`}>

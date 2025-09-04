@@ -68,10 +68,34 @@
   }
   
   .glass-effect {
-    @apply backdrop-blur-md bg-white/5 border border-white/10;
+    @apply backdrop-blur-md bg-white/5 border border-white/10 shadow-xl;
   }
   
   .hover-glow {
     @apply transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,212,255,0.3)];
+  }
+  
+  .section-container {
+    @apply container mx-auto px-6 lg:px-8 relative z-10;
+  }
+  
+  .section-header {
+    @apply text-center mb-20 lg:mb-24;
+  }
+  
+  .section-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold font-poppins mb-6 tracking-tight;
+  }
+  
+  .section-divider {
+    @apply w-24 h-1 bg-gradient-to-r from-electric-blue to-neon-green mx-auto mb-6;
+  }
+  
+  .section-description {
+    @apply text-gray-400 text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed;
+  }
+  
+  .professional-card {
+    @apply glass-effect hover-glow transition-all duration-500 transform hover:-translate-y-2 hover:scale-[1.02] rounded-2xl overflow-hidden;
   }
 }

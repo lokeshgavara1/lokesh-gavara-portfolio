@@ -70,20 +70,20 @@ const Portfolio = () => {
         <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-electric-blue/5 rounded-full blur-3xl"></div>
       </div>
       
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold font-poppins mb-6">
-            My <span className="gradient-text">Projects</span>
+      <div className="section-container">
+        <div className="section-header">
+          <h2 className="section-title">
+            Featured <span className="gradient-text">Projects</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-electric-blue to-neon-green mx-auto mb-6"></div>
-          <p className="text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed">
+          <div className="section-divider"></div>
+          <p className="section-description">
             Showcase of innovative projects combining AI/ML with practical applications
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 max-w-7xl mx-auto">
           {projects.map((project, index) => (
-            <Card key={index} className={`glass-effect border-${project.color}/20 hover-glow animate-fade-in overflow-hidden group hover:border-${project.color}/40 transition-all duration-500 transform hover:-translate-y-4 hover:scale-105`} style={{animationDelay: `${index * 0.2}s`}}>
+            <Card key={index} className={`professional-card border-${project.color}/20 hover:border-${project.color}/40 animate-fade-in overflow-hidden group`} style={{animationDelay: `${index * 0.2}s`}}>
               <div className="relative overflow-hidden">
                 <img 
                   src={project.image} 
@@ -96,7 +96,7 @@ const Portfolio = () => {
                 </div>
               </div>
               
-              <CardContent className="p-10">
+              <CardContent className="p-8 lg:p-10">
                 <h3 className={`text-2xl font-semibold text-${project.color} mb-6 group-hover:text-white transition-colors duration-300`}>{project.title}</h3>
                 <p className="text-gray-300 leading-relaxed mb-8 text-lg">{project.description}</p>
                 

@@ -20,51 +20,57 @@ const Hero = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-neon-pink/10 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
       </div>
       
-      <div className="container mx-auto px-4 text-center relative z-10">
+      <div className="section-container text-center max-w-6xl">
         <div className="animate-fade-in">
           {/* Profile Image */}
-          <div className="mt-16 mb-4 flex justify-center">
+          <div className="mb-12 flex justify-center">
             <div className="relative flex items-center justify-center">
-              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-electric-blue/30 shadow-[0_0_40px_rgba(0,212,255,0.3)] animate-glow flex items-center justify-center">
+              <div className="w-52 h-52 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-electric-blue/30 shadow-[0_0_50px_rgba(0,212,255,0.4)] animate-glow flex items-center justify-center bg-gradient-to-br from-electric-blue/10 to-neon-green/10">
                 <img 
                   src="https://i.postimg.cc/zDbKDKYN/naaphoto.png" 
-                  alt="Lokesh Gavara"
+                  alt="Lokesh Gavara - Machine Learning Enthusiast"
                   className="w-full h-full object-cover object-center"
                 />
               </div>
-              <div className="absolute -top-2 -right-2 w-12 h-12 bg-neon-green rounded-full flex items-center justify-center animate-pulse">
-                <div className="w-6 h-6 bg-black rounded-full"></div>
+              <div className="absolute -top-3 -right-3 w-14 h-14 bg-gradient-to-br from-neon-green to-electric-blue rounded-full flex items-center justify-center animate-pulse shadow-lg">
+                <div className="w-7 h-7 bg-background rounded-full flex items-center justify-center">
+                  <div className="w-3 h-3 bg-neon-green rounded-full"></div>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Introduction */}
-          <p className="text-electric-blue font-medium text-lg mb-4 tracking-wide">Hello, I'm</p>
+          <div className="space-y-6">
+            <p className="text-electric-blue font-semibold text-xl tracking-wide uppercase">Hello, I'm</p>
+            
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-poppins leading-tight">
+              <span className="gradient-text">Lokesh Gavara</span>
+            </h1>
+            
+            <h2 className="text-2xl md:text-3xl lg:text-4xl text-foreground/80 font-medium">
+              Machine Learning Enthusiast | Developer | Designer
+            </h2>
+            
+            <p className="text-muted-foreground text-lg lg:text-xl max-w-4xl mx-auto leading-relaxed">
+              I am a B.Tech student specializing in Computer Science and Engineering with a focus on 
+              Artificial Intelligence and Machine Learning, passionate about cutting-edge technologies 
+              and solving real-world problems through innovative solutions.
+            </p>
+          </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold font-poppins mb-6">
-            <span className="gradient-text">Lokesh Gavara</span>
-          </h1>
-          
-          <h2 className="text-2xl md:text-3xl text-gray-300 font-medium mb-8">
-            Machine Learning Enthusiast | Developer | Designer
-          </h2>
-          
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-12 leading-relaxed">
-            I am a B.Tech student specializing in Computer Science and Engineering with a focus on 
-            Artificial Intelligence and Machine Learning, passionate about cutting-edge technologies 
-            and solving real-world problems through innovative solutions.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-12">
             <Button 
               onClick={() => scrollToSection('portfolio')}
-              className="bg-electric-blue hover:bg-electric-blue/80 text-black font-semibold px-8 py-3 rounded-full hover-glow text-lg"
+              className="bg-electric-blue hover:bg-electric-blue/80 text-background font-semibold px-10 py-4 rounded-full hover-glow text-lg shadow-lg hover:shadow-electric-blue/25 transition-all duration-300"
+              size="lg"
             >
               View My Work
             </Button>
             <Button 
               variant="outline" 
-              className="border-electric-blue text-electric-blue hover:bg-electric-blue hover:text-black px-8 py-3 rounded-full text-lg transition-all duration-300"
+              className="border-2 border-electric-blue text-electric-blue hover:bg-electric-blue hover:text-background px-10 py-4 rounded-full text-lg transition-all duration-300 shadow-lg"
+              size="lg"
             >
               Download Resume
             </Button>

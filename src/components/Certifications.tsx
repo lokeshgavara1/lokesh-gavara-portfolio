@@ -69,25 +69,25 @@ const Certifications = () => {
         <div className="absolute top-2/3 left-1/6 w-72 h-72 bg-neon-pink/5 rounded-full blur-3xl"></div>
       </div>
       
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold font-poppins mb-6">
-            My <span className="gradient-text">Certifications</span>
+      <div className="section-container">
+        <div className="section-header">
+          <h2 className="section-title">
+            Professional <span className="gradient-text">Certifications</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-electric-blue to-neon-green mx-auto mb-6"></div>
-          <p className="text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed">
+          <div className="section-divider"></div>
+          <p className="section-description">
             Professional certifications and achievements that validate my expertise in various technologies
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10 max-w-7xl mx-auto">
           {certifications.map((cert, index) => (
             <Card 
               key={index} 
-              className={`glass-effect border-${cert.color}/20 hover-glow animate-fade-in group hover:border-${cert.color}/40 transition-all duration-500 transform hover:-translate-y-3 hover:scale-105`} 
+              className={`professional-card border-${cert.color}/20 hover:border-${cert.color}/40 animate-fade-in group`} 
               style={{animationDelay: `${index * 0.1}s`}}
             >
-              <CardContent className="p-8">
+              <CardContent className="p-8 lg:p-10">
                 <div className="flex items-center justify-between mb-6">
                   <div className={`w-16 h-16 bg-${cert.color}/20 rounded-2xl flex items-center justify-center p-3`}>
                     <img 

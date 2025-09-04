@@ -64,22 +64,22 @@ const Contact = () => {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-neon-pink/5 rounded-full blur-3xl"></div>
       </div>
       
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold font-poppins mb-6">
+      <div className="section-container">
+        <div className="section-header">
+          <h2 className="section-title">
             Get In <span className="gradient-text">Touch</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-electric-blue to-neon-green mx-auto mb-6"></div>
-          <p className="text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed">
+          <div className="section-divider"></div>
+          <p className="section-description">
             Ready to collaborate? Let's discuss your next project or opportunity
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-16 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 max-w-7xl mx-auto">
           {/* Contact Information */}
           <div className="animate-slide-in-left">
-            <Card className="glass-effect border-electric-blue/20 hover-glow group hover:border-electric-blue/40 transition-all duration-500 transform hover:-translate-y-2">
-              <CardContent className="p-10">
+            <Card className="professional-card border-electric-blue/20 group hover:border-electric-blue/40">
+              <CardContent className="p-10 lg:p-12">
                 <div className="flex items-center mb-10">
                   <div className="w-12 h-12 bg-electric-blue/20 rounded-xl flex items-center justify-center mr-4">
                     <div className="w-6 h-6 bg-electric-blue rounded-lg"></div>
@@ -110,8 +110,8 @@ const Contact = () => {
           
           {/* Contact Form */}
           <div className="animate-fade-in">
-            <Card className="glass-effect border-neon-green/20 hover-glow group hover:border-neon-green/40 transition-all duration-500 transform hover:-translate-y-2">
-              <CardContent className="p-10">
+            <Card className="professional-card border-neon-green/20 group hover:border-neon-green/40">
+              <CardContent className="p-10 lg:p-12">
                 <div className="flex items-center mb-10">
                   <div className="w-12 h-12 bg-neon-green/20 rounded-xl flex items-center justify-center mr-4">
                     <div className="w-6 h-6 bg-neon-green rounded-lg"></div>
