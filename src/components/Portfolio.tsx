@@ -45,7 +45,7 @@ const Portfolio = () => {
     {
       title: "YouTube Trend Analysis",
       description: "YouTube Trend Analysis system implementing CrewAI and BrightData for comprehensive video trend insights and analytics",
-      image: "https://images.unsplash.com/photo-1551817958-20d0c3bf76b3?w=600&h=400&fit=crop",
+      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop",
       tech: ["CrewAI", "BrightData", "Analytics", "YouTube API"],
       accuracy: "Trend Analysis",
       color: "electric-blue",
