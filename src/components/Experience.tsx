@@ -9,24 +9,23 @@ const Experience = () => {
       title: "Python Developer Intern",
       company: "Infosys Springboard",
       location: "Remote",
-      period: "May 2025 – Present",
+      period: "Oct 2025 – Present",
       achievements: [
-        "Gained hands-on experience in core Python concepts including data structures, OOPs, exception handling, and file operations",
-        "Learned to apply Python for automation, data handling, and basic API integration",
-        "Enhanced problem-solving and coding efficiency through assignments, coding challenges, and mentorship sessions"
+        "Develop and optimize modular Python code using advanced data structures and object-oriented programming (OOP) principles to ensure scalability and maintainability",
+        "Implement and automate workflows and API integrations to streamline data processing, reduce manual tasks, and improve operational efficiency",
+        "Enhance problem-solving and debugging capabilities by working on real-world projects and tackling complex coding challenges in a collaborative environment"
       ],
       color: "electric-blue"
     },
     {
-      title: "Artificial Intelligence and Machine Learning Intern",
+      title: "AI/ML Intern",
       company: "Infosys Springboard",
       location: "Remote", 
-      period: "June 2025 – Present",
+      period: "Jun – Oct 2025",
       achievements: [
-        "Gained hands-on experience in data preprocessing, model building, training, and evaluation",
-        "Designed and optimized machine learning models for classification, prediction, and clustering using Python, TensorFlow, Scikit-learn",
-        "Gained exposure to neural networks and deep learning fundamentals",
-        "Collaborated on project-based tasks, enhancing problem-solving, critical thinking, and analytical skills"
+        "Built and optimized machine learning models for classification and regression using Python, Scikit-learn, and TensorFlow",
+        "Applied data preprocessing, model training, evaluation, and hyperparameter tuning techniques to enhance predictive accuracy and model performance",
+        "Gained hands-on experience with neural networks, deep learning architectures, and end-to-end AI/ML workflows, contributing to practical real-world solutions"
       ],
       color: "neon-green"
     }
