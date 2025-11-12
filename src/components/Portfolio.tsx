@@ -7,12 +7,21 @@ import { Button } from '@/components/ui/button';
 const Portfolio = () => {
   const projects = [
     {
+      title: "🎧 AI Audio Book Generator",
+      description: "Transform text documents into narrated audiobooks using AI-powered rewriting and text-to-speech (TTS). Upload PDF, DOCX, or TXT files and automatically generate natural-sounding audiobooks with storytelling narration. Built with Python and Streamlit — no paid APIs required for basic use.",
+      image: "https://images.unsplash.com/photo-1589998059171-988d887df646?w=600&h=400&fit=crop",
+      tech: ["Python", "Streamlit", "AI", "TTS", "NLP"],
+      accuracy: "AI-Powered",
+      color: "electric-blue",
+      github: "https://github.com/lokeshgavara1/AI-AUDIO-BOOK-GENERATOR"
+    },
+    {
       title: "AI-Crop Disease Prediction System",
       description: "Android app for real-time plant disease detection using TensorFlow Lite with 90% classification accuracy using CNN model",
       image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&h=400&fit=crop",
       tech: ["TensorFlow Lite", "Android", "CNN", "Python"],
       accuracy: "90%",
-      color: "electric-blue",
+      color: "neon-green",
       github: "https://github.com/lokeshgavara1/Crop_Disease_Prediction"
     },
     {
