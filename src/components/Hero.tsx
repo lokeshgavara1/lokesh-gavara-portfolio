@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="section-container text-center max-w-6xl">
         <div className="animate-fade-in">
           {/* Profile Image */}
-          <div className="mb-12 flex justify-center">
+          <div className="mb-12 flex justify-center mt-24">
             <div className="relative flex items-center justify-center">
               <div className="w-52 h-52 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-electric-blue/30 shadow-[0_0_50px_rgba(0,212,255,0.4)] animate-glow flex items-center justify-center bg-gradient-to-br from-electric-blue/10 to-neon-green/10">
                 <img 
