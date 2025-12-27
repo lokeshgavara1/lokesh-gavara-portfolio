@@ -7,12 +7,30 @@ import { Button } from '@/components/ui/button';
 const Portfolio = () => {
   const projects = [
     {
+      title: "🎤 Audio-Based Conversational Chatbot",
+      description: "Complete real-time audio-based conversational chatbot system built with Django, React, and WebSockets. Features speech-to-text (STT) using Whisper, LLM integration via Groq (Llama 3.3), and text-to-speech (TTS) using Google TTS (gTTS).",
+      image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?w=600&h=400&fit=crop",
+      tech: ["Django", "React", "WebSockets", "Whisper", "Groq", "gTTS"],
+      accuracy: "Real-Time",
+      color: "neon-pink",
+      github: "https://github.com/lokeshgavara1"
+    },
+    {
+      title: "🌍 AirAware - Smart Air Quality Prediction",
+      description: "Comprehensive air quality monitoring and prediction system for Delhi, India. Collects, stores, analyzes, and visualizes air quality data with real-time monitoring capabilities and predictive analytics to help make informed decisions.",
+      image: "https://images.unsplash.com/photo-1530533718754-001d2668365a?w=600&h=400&fit=crop",
+      tech: ["Python", "ML", "Analytics", "Prediction", "Real-Time"],
+      accuracy: "Predictive",
+      color: "electric-blue",
+      github: "https://github.com/lokeshgavara1"
+    },
+    {
       title: "🎧 AI Audio Book Generator",
       description: "Transform text documents into narrated audiobooks using AI-powered rewriting and text-to-speech (TTS). Upload PDF, DOCX, or TXT files and automatically generate natural-sounding audiobooks with storytelling narration. Built with Python and Streamlit — no paid APIs required for basic use.",
       image: "https://images.unsplash.com/photo-1589998059171-988d887df646?w=600&h=400&fit=crop",
       tech: ["Python", "Streamlit", "AI", "TTS", "NLP"],
       accuracy: "AI-Powered",
-      color: "electric-blue",
+      color: "neon-green",
       github: "https://github.com/lokeshgavara1/AI-AUDIO-BOOK-GENERATOR"
     },
     {
