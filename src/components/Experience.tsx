@@ -6,10 +6,22 @@ import { Badge } from '@/components/ui/badge';
 const Experience = () => {
   const experiences = [
     {
+      title: "Graduate Engineer Trainee",
+      company: "Gramtarang Technologies",
+      location: "Onsite",
+      period: "Dec 2025 – Present",
+      achievements: [
+        "Working as a Graduate Engineer Trainee contributing to technology solutions and development projects",
+        "Collaborating with cross-functional teams to deliver innovative engineering solutions",
+        "Gaining hands-on experience in professional software development practices and workflows"
+      ],
+      color: "neon-pink"
+    },
+    {
       title: "Python Developer Intern",
       company: "Infosys Springboard",
       location: "Remote",
-      period: "Oct 2025 – Present",
+      period: "Oct – Dec 2025",
       achievements: [
         "Develop and optimize modular Python code using advanced data structures and object-oriented programming (OOP) principles to ensure scalability and maintainability",
         "Implement and automate workflows and API integrations to streamline data processing, reduce manual tasks, and improve operational efficiency",
