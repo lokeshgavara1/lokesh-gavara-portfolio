@@ -2,6 +2,8 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import gramtarangLogo from '@/assets/gramtarang-logo.png';
+import infosysLogo from '@/assets/infosys-logo.png';
 
 const Experience = () => {
   const experiences = [
@@ -15,7 +17,8 @@ const Experience = () => {
         "Collaborating with cross-functional teams to deliver innovative engineering solutions",
         "Gaining hands-on experience in professional software development practices and workflows"
       ],
-      color: "neon-pink"
+      color: "neon-pink",
+      logo: gramtarangLogo
     },
     {
       title: "Python Developer Intern",
@@ -27,7 +30,8 @@ const Experience = () => {
         "Implement and automate workflows and API integrations to streamline data processing, reduce manual tasks, and improve operational efficiency",
         "Enhance problem-solving and debugging capabilities by working on real-world projects and tackling complex coding challenges in a collaborative environment"
       ],
-      color: "electric-blue"
+      color: "electric-blue",
+      logo: infosysLogo
     },
     {
       title: "AI/ML Intern",
@@ -39,7 +43,8 @@ const Experience = () => {
         "Applied data preprocessing, model training, evaluation, and hyperparameter tuning techniques to enhance predictive accuracy and model performance",
         "Gained hands-on experience with neural networks, deep learning architectures, and end-to-end AI/ML workflows, contributing to practical real-world solutions"
       ],
-      color: "neon-green"
+      color: "neon-green",
+      logo: infosysLogo
     }
   ];
 
@@ -68,8 +73,8 @@ const Experience = () => {
               <CardContent className="p-10 lg:p-12">
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-8">
                   <div className="flex items-start space-x-6">
-                    <div className={`w-16 h-16 bg-${exp.color}/20 rounded-2xl flex items-center justify-center flex-shrink-0`}>
-                      <div className={`w-8 h-8 bg-${exp.color} rounded-xl`}></div>
+                    <div className={`w-16 h-16 bg-white rounded-2xl flex items-center justify-center flex-shrink-0 overflow-hidden`}>
+                      <img src={exp.logo} alt={exp.company} className="w-14 h-14 object-contain" />
                     </div>
                     <div>
                       <h3 className={`text-3xl font-semibold text-${exp.color} mb-3`}>{exp.title}</h3>
