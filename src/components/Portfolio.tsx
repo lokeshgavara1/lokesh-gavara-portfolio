@@ -13,7 +13,7 @@ const Portfolio = () => {
       tech: ["Django", "React", "WebSockets", "Whisper", "Groq", "gTTS"],
       accuracy: "Real-Time",
       color: "neon-pink",
-      github: "https://github.com/lokeshgavara1"
+      github: "https://github.com/lokeshgavara1/Real-Time-Ai-Voice-Chatbot"
     },
     {
       title: "🌍 AirAware - Smart Air Quality Prediction",
@@ -22,7 +22,7 @@ const Portfolio = () => {
       tech: ["Python", "ML", "Analytics", "Prediction", "Real-Time"],
       accuracy: "Predictive",
       color: "electric-blue",
-      github: "https://github.com/lokeshgavara1"
+      github: "https://github.com/lokeshgavara1/AirAware-Smart-Air-Quality-Prediction-System"
     },
     {
       title: "🎧 AI Audio Book Generator",
