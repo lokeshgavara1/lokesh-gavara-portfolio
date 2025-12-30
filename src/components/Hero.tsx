@@ -21,19 +21,47 @@ const Hero = () => {
       
       <div className="section-container text-center max-w-6xl">
         <div className="animate-fade-in">
-          {/* Profile Image */}
-          <div className="mb-12 flex justify-center mt-24">
-            <div className="relative flex items-center justify-center">
-              <div className="w-52 h-52 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-electric-blue/30 shadow-[0_0_50px_rgba(0,212,255,0.4)] animate-glow flex items-center justify-center bg-gradient-to-br from-electric-blue/10 to-neon-green/10">
+          {/* Profile Image - 3D Effect */}
+          <div className="mb-12 flex justify-center mt-24 perspective-[1000px]">
+            <div className="relative flex items-center justify-center group">
+              {/* 3D Container with hover effect */}
+              <div 
+                className="w-52 h-52 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-electric-blue/40 
+                shadow-[0_20px_50px_rgba(0,212,255,0.4),0_0_80px_rgba(0,212,255,0.2),inset_0_-10px_30px_rgba(0,0,0,0.3)] 
+                animate-glow flex items-center justify-center bg-gradient-to-br from-electric-blue/20 to-neon-green/20
+                transform-gpu transition-all duration-500 ease-out
+                hover:rotate-y-12 hover:rotate-x-6 hover:scale-105
+                group-hover:shadow-[0_30px_60px_rgba(0,212,255,0.5),0_0_100px_rgba(0,212,255,0.3),inset_0_-15px_40px_rgba(0,0,0,0.4)]"
+                style={{
+                  transformStyle: 'preserve-3d',
+                }}
+              >
+                {/* Image with 3D depth */}
                 <img 
                   src="https://i.postimg.cc/zDbKDKYN/naaphoto.png" 
                   alt="Lokesh Gavara - Machine Learning Enthusiast"
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover object-center transition-transform duration-500"
+                  style={{
+                    transform: 'translateZ(20px)',
+                  }}
                 />
+                {/* 3D Highlight overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-transparent rounded-full pointer-events-none"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-full pointer-events-none"></div>
               </div>
-              <div className="absolute -top-3 -right-3 w-14 h-14 bg-gradient-to-br from-neon-green to-electric-blue rounded-full flex items-center justify-center animate-pulse shadow-lg">
-                <div className="w-7 h-7 bg-background rounded-full flex items-center justify-center">
-                  <div className="w-3 h-3 bg-neon-green rounded-full"></div>
+              
+              {/* Floating ring effect for 3D depth */}
+              <div className="absolute inset-0 w-52 h-52 lg:w-64 lg:h-64 rounded-full border-2 border-electric-blue/20 
+                transform translate-z-[-20px] scale-110 animate-pulse pointer-events-none"
+                style={{ transform: 'translateZ(-20px) scale(1.1)' }}
+              ></div>
+              
+              {/* Status indicator */}
+              <div className="absolute -top-3 -right-3 w-14 h-14 bg-gradient-to-br from-neon-green to-electric-blue rounded-full flex items-center justify-center animate-pulse shadow-[0_10px_30px_rgba(57,255,20,0.4)]"
+                style={{ transform: 'translateZ(30px)' }}
+              >
+                <div className="w-7 h-7 bg-background rounded-full flex items-center justify-center shadow-inner">
+                  <div className="w-3 h-3 bg-neon-green rounded-full shadow-[0_0_10px_rgba(57,255,20,0.8)]"></div>
                 </div>
               </div>
             </div>
